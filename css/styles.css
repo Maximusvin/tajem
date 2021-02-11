@@ -106,13 +106,25 @@ body {
 .btn {
   font-family: 'HammersmithOne-Regular', sans-serif;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1;
+  text-align: center;
   display: block;
-  border: none;
   outline: none;
   cursor: pointer;
-  color: #fff;
+  color: rgb(0, 224, 208);
+  border: 1px solid rgb(0, 224, 208);
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 14px;
   transition: all 0.2s linear;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover,
+.btn:focus {
+  color: rgb(253, 253, 253);
+  background-color: rgba(0, 224, 208, 0.3);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -139,13 +151,21 @@ input[type='radio'].visually-hidden {
 }
 
 .header {
-  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85)), url('../images/bg-header.jpg') 50% 50% no-repeat;
   color: #fff;
+  position: relative;
 }
 
 .header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.header__nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,6 +186,13 @@ input[type='radio'].visually-hidden {
   background: linear-gradient(to right, #01decf, #4697bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.4s linear;
+}
+
+.logo:hover .logo__text {
+  background: linear-gradient(to left, #01decf, #4697bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navigation {
@@ -184,7 +211,6 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 0.025em;
   transition: color 0.2s linear;
-  line-height: ;
 }
 
 .navigation__link:hover,
@@ -193,18 +219,18 @@ input[type='radio'].visually-hidden {
 }
 
 .offer {
-  padding-top: 155px;
+  padding-top: 205px;
   text-align: center;
 }
 
-.main-title {
+.offer__title {
   font-family: 'PlayfairDisplay-Black', serif;
   font-size: 32px;
   letter-spacing: 0.01em;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
-.main-title::after {
+.offer__title::after {
   content: '';
   display: block;
   height: 1px;
@@ -213,6 +239,58 @@ input[type='radio'].visually-hidden {
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
+}
+
+.offer__subtitle {
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  width: 785px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.offer__btn {
+  margin-bottom: 205px;
+}
+
+.swiper-slide_one {
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85)),
+    url('../images/slider/header/1.jpg') 50% 50% no-repeat;
+}
+
+.swiper-slide_two {
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85)),
+    url('../images/slider/header/2.jpg') 50% 50% no-repeat;
+}
+
+.swiper-slide_three {
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85)),
+    url('../images/slider/header/3.jpg') 50% 50% no-repeat;
+}
+
+.swiper-slide__four {
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85)),
+    url('../images/slider/header/4.jpg') 50% 50% no-repeat;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+  transition: all 0.2s linear;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 70px;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #00e0d0;
+  background-color: #00e0d0;
 }
 
 /* ------ Media Queries ------ */
