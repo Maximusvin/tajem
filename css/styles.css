@@ -103,6 +103,14 @@ body {
   font-size: 14px;
 }
 
+.title {
+  font-size: 22px;
+  font-family: 'PlayfairDisplay-Bold';
+  color: #413d4b;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .btn {
   font-family: 'HammersmithOne-Regular', sans-serif;
   font-size: 16px;
@@ -291,6 +299,185 @@ input[type='radio'].visually-hidden {
 .swiper-pagination-bullet-active {
   border: 1px solid #00e0d0;
   background-color: #00e0d0;
+}
+
+section {
+  padding-top: 70px;
+}
+
+.about-story .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+
+.about-story__img-wrap {
+  width: 380px;
+  padding-top: 15px;
+}
+
+.about-story__img-wrap img {
+  margin: 0 auto;
+}
+
+.about-story__content-wrap {
+  max-width: 540px;
+  text-align-last: left;
+}
+
+.about-story__title {
+  margin-bottom: 25px;
+}
+
+.about-content {
+  color: rgba(65, 61, 75, 0.749);
+  line-height: 1.571em;
+  letter-spacing: 0.03em;
+  margin-bottom: 25px;
+}
+
+.about-content:nth-last-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.about-story__btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-watch {
+  background: url('../images/about_bg.jpg') 50% 50% no-repeat;
+}
+
+.overlay {
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.851) 0%, rgba(49, 29, 94, 0.851) 100%);
+
+  width: 100%;
+}
+
+.about-watch__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-watch__btn {
+  margin-bottom: 30px;
+}
+
+.about-watch__btn:hover .outline,
+.about-watch__btn:focus .outline {
+  box-shadow: 0 0 5px #00e0d0;
+  border: 3px solid #00e0d0;
+}
+
+.outline {
+  padding-top: 22px;
+  padding-left: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 94px;
+  height: 94px;
+  transition: all 0.2s linear;
+}
+
+.play {
+  width: 37px;
+  height: 45px;
+}
+
+.about-watch__link {
+  font-size: 16px;
+  font-family: 'Roboto-Black';
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+
+.about-watch__link:hover,
+.about-watch__link:focus {
+  color: #00e0d0;
+}
+
+.expertize {
+  padding-bottom: 68px;
+}
+
+.expertize__title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.expertize__subtitle {
+  font-size: 14px;
+  font-family: 'PlayfairDisplay-Regular';
+  color: rgba(47, 45, 53, 0.749);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.expertize__subtitle::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: rgb(65, 61, 75);
+  opacity: 0.302;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+}
+
+.expertize__list {
+  display: grid;
+  grid-template-columns: repeat(3, 313px);
+  justify-content: center;
+  /* grid-row-gap: 5px;
+  grid-column-gap: 5px; */
+}
+
+.expertize__item {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 32px;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.expertize__item:not(:nth-last-child(-n + 3)) {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.expertize__item:not(:nth-child(3n)) {
+  border-right: 1px solid #ebebeb;
+}
+.expertize__card-icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.expertize__card-title {
+  font-family: 'Roboto-Black';
+  font-size: 14px;
+  color: rgb(65, 61, 75);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+
+.expertize__card-subtitle {
+  font-family: 'Roboto-Light';
+  color: rgba(51, 51, 51, 0.749);
+  line-height: 1.571;
 }
 
 /* ------ Media Queries ------ */
