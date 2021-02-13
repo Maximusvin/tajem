@@ -705,6 +705,7 @@ section {
 .contact .container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .contact__form {
@@ -721,6 +722,7 @@ section {
   height: 45px;
   padding-left: 20px;
   margin-bottom: 21px;
+  outline: none;
 }
 
 .contact__form textarea {
@@ -730,10 +732,43 @@ section {
   padding-top: 20px;
   padding-left: 20px;
   resize: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: rgba(65, 61, 75, 0.502);
+}
+
+.contact-btn {
+  margin-left: 0;
+  width: 120px;
 }
 
 .clients {
   width: 385px;
+}
+
+.clients .title {
+  margin-bottom: 45px;
+}
+
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients__left,
+.clients__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients-wrapper img {
+  margin-bottom: 50px;
 }
 
 /* ------ Media Queries ------ */
