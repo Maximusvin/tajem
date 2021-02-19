@@ -208,6 +208,7 @@ input[type='radio'].visually-hidden {
 .navigation {
   display: flex;
   align-items: center;
+  padding-top: 7px;
 }
 
 .navigation__item:not(:last-child) {
@@ -930,25 +931,114 @@ section {
   color: rgb(255, 255, 255);
   line-height: 1.857;
   letter-spacing: 0.025em;
+  transition: color 0.2s linear;
+}
+
+.footer__navigation li a:hover {
+  color: #00e0d0;
 }
 
 /* ------ Media Queries ------ */
-
-@media screen and (min-width: 1200px) {
-}
 
 /* 992-1200px */
 @media screen and (max-width: 1200px) {
 }
 
-@media screen and (min-width: 993px) {
-}
-
 /* 768-992px */
 @media screen and (max-width: 992px) {
-}
+  .container {
+    width: 700px;
+  }
 
-@media screen and (min-width: 769px) {
+  .navigation__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .offer {
+    padding-top: 170px;
+  }
+
+  .offer__subtitle {
+    width: 700px;
+  }
+
+  .about-story__img-wrap {
+    width: 230px;
+  }
+
+  .about-story__content-wrap {
+    max-width: 400px;
+  }
+
+  .expertize__list {
+    grid-template-columns: repeat(3, 250px);
+  }
+
+  .teams__cards-img-wrap {
+    height: 190px;
+  }
+
+  .teams__cards-item {
+    width: 160px;
+  }
+
+  .gallery {
+    margin-bottom: 45px;
+  }
+
+  .gallery__item {
+    height: 100px;
+  }
+
+  .people .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact__form {
+    width: 330px;
+  }
+
+  .clients {
+    width: 330px;
+  }
+
+  .clients__left,
+  .clients__right {
+    width: 140px;
+  }
+
+  .clients-wrapper img {
+    margin-bottom: 40px;
+  }
+
+  .footer .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__wrap div {
+    width: 210px;
+  }
+
+  .footer__contact input {
+    width: 170px;
+  }
+
+  .footer__form-btn {
+    width: 40px;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social li {
+    margin-bottom: 8px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -956,12 +1046,139 @@ section {
 
 /* 577-768px */
 @media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .expertize__list {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .offer {
+    padding-top: 130px;
+  }
+
+  .offer__subtitle {
+    width: 500px;
+  }
+
+  .offer__btn {
+    margin-bottom: 100px;
+  }
+
+  .about-story .container {
+    display: block;
+  }
+
+  .about-story__img-wrap {
+    display: none;
+  }
+
+  .about-story__content-wrap {
+    max-width: 100%;
+  }
+
+  .swiper-slide__four {
+    height: 514px;
+  }
+
+  .about-story__title {
+    text-align: center;
+  }
+
+  .about-story__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-watch__btn-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .teams__cards-item {
+    width: 115px;
+  }
+
+  .teams__cards-img-wrap {
+    height: 136px;
+  }
+
+  .gallery__item {
+    height: 73px;
+  }
+
+  section {
+    padding-top: 45px;
+  }
+
+  .works__header {
+    padding-bottom: 40px;
+  }
+
+  .works {
+    padding-bottom: 45px;
+  }
+
+  .people .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact__form {
+    width: 250px;
+    margin-right: 50px;
+  }
+
+  .clients__left,
+  .clients__right {
+    width: 100px;
+  }
+
+  .footer__wrap {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+
+  .footer {
+    background-size: cover;
+  }
+
+  .footer__wrap div {
+    width: 240px;
+    margin-bottom: 34px;
+  }
+
+  .footer__contact input {
+    width: 200px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__navigation {
+    margin-bottom: 15px;
+  }
+
+  .expertize__item:not(:nth-child(3n)) {
+    border-right: none;
+  }
+  .expertize__item:not(:nth-last-child(-n + 3)) {
+    border-bottom: none;
+  }
+
+  .expertize__item:not(:nth-child(2n)) {
+    border-right: 1px solid #ebebeb;
+  }
+  .expertize__item:not(:nth-last-child(-n + 2)) {
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
-}
-
-/* 320-479px */
-@media screen and (max-width: 479px) {
+  .container {
+    width: 90%;
+  }
 }

@@ -11,3 +11,7 @@ b.push(4);
 
 console.log(a);
 console.log(b);
+
+console.log(typeof new Boolean(false));
+
+console.log(+'fgdfhfgh');
