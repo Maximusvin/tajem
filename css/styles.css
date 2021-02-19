@@ -1181,4 +1181,80 @@ section {
   .container {
     width: 90%;
   }
+
+  .expertize__list {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .contact__form {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .clients {
+    width: 100%;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .offer__subtitle {
+    width: 90%;
+  }
+
+  .expertize__item:not(:nth-last-child(-n + 2)) {
+    border-bottom: none;
+  }
+
+  .expertize__item:not(:nth-child(2n)) {
+    border-right: none;
+  }
+
+  .expertize__item:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .contact .container {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .header__nav .container {
+    justify-content: center;
+  }
+
+  .about-story .container {
+    padding-bottom: 50px;
+  }
+
+  .teams__cards {
+    flex-wrap: wrap;
+  }
+
+  .teams {
+    background-size: cover;
+  }
+
+  .teams__cards-item {
+    margin-bottom: 20px;
+  }
+
+  .teams .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .gallery__item {
+    height: 40px;
+  }
+
+  .people {
+    background-size: cover;
+  }
+
+  .footer__navigation li:not(:last-child) {
+    margin-right: 15px;
+  }
 }
